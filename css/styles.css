@@ -652,9 +652,13 @@ body {
   padding-bottom: 94px;
 }
 
-.features .list,
 .branches .list,
 .team .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features__list {
   display: flex;
   flex-wrap: wrap;
 }
@@ -683,7 +687,7 @@ body {
   height: 120px;
 }
 
-.features .title {
+.features__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -691,7 +695,7 @@ body {
   margin-bottom: 10px;
 }
 
-.features .text {
+.features__text {
   font-size: 14px;
   line-height: 1.71;
 }
