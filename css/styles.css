@@ -362,8 +362,6 @@ body {
   margin-bottom: 9px;
 }
 
-
-
 .social .title,
 .signup-form-title {
   font-size: 14px;
@@ -381,7 +379,7 @@ body {
   color: var(--primary-white-color);
 }
 
-.round-wrapper {
+.round-wrapper-link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -391,13 +389,15 @@ body {
   cursor: pointer;
   outline: none;
   color: var(--greyish-background-color);
+  text-decoration: none;
+  outline: none;
   transition: color var(--transition-cubic), background-color var(--transition-cubic);
 }
 
-.round-wrapper:hover,
-.round-wrapper:focus,
-.footer .round-wrapper:hover,
-.footer .round-wrapper:focus {
+.round-wrapper-link:hover,
+.round-wrapper-link:focus,
+.footer .round-wrapper-link:hover,
+.footer .round-wrapper-link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -647,11 +647,11 @@ body {
   padding-bottom: 94px;
 }
 
-.branches .list,
+/* .branches .list,
 .team .list {
   display: flex;
   flex-wrap: wrap;
-}
+} */
 
 .features__list {
   display: flex;
@@ -695,15 +695,6 @@ body {
   padding-bottom: 94px;
 }
 
-.branches__title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--title-text-color);
-  margin-bottom: 50px;
-}
-
 .branches__list {
   display: flex;
   flex-wrap: wrap;
@@ -717,11 +708,7 @@ body {
   margin-right: 30px;
 }
 
-.team .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team .title,
+.section-title,
 .clients .title {
   font-size: 36px;
   font-weight: 700;
@@ -756,17 +743,32 @@ body {
 }
 
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--lighter-background-color);
 }
 
-.team .item {
+.team__people-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.team__people-item {
   border-radius: 0px 0px 4px 4px;
   background: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.team .name {
+.team__people-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team__details {
+  padding: 30px 32px;
+}
+
+.team__name {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -774,13 +776,9 @@ body {
   margin-bottom: 10px;
 }
 
-.team .description {
+.team__description {
   text-align: center;
   margin-bottom: 16px;
-}
-
-.team .details {
-  padding: 30px 32px;
 }
 
 .client-list-wrapper {
