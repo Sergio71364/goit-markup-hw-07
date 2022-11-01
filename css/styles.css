@@ -58,13 +58,16 @@ body {
   border-bottom: 1px solid var(--line-color);
 }
 
+.container__header {
+  display: flex;
+  align-items: center;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -349,10 +352,6 @@ body {
   padding-bottom: 94px;
 }
 
-.no-top-padding {
-  padding-top: 0;
-}
-
 .footer .logo {
   display: block;
   margin-bottom: 20px;
@@ -363,11 +362,7 @@ body {
   margin-bottom: 9px;
 }
 
-.image {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+
 
 .social .title,
 .signup-form-title {
@@ -671,11 +666,6 @@ body {
   margin-right: 30px;
 }
 
-.branches .item:not(:last-child),
-.team .item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .features__icon-wrapper {
   display: flex;
   align-items: center;
@@ -700,7 +690,37 @@ body {
   line-height: 1.71;
 }
 
-.branches .title,
+.branches {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.branches__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.branches__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.branches__item {
+  position: relative;
+}
+
+.branches__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .team .title,
 .clients .title {
   font-size: 36px;
@@ -711,11 +731,7 @@ body {
   margin-bottom: 50px;
 }
 
-.branches .item {
-  position: relative;
-}
-
-.branch-text {
+.branches__text {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -731,6 +747,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .team {
