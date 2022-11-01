@@ -1,5 +1,5 @@
-# goit-markup-hw-06
+# goit-markup-hw-07
 
-# Домашня робота #6 GOIT Fullstack #69 Нежигая Сергія
+# Домашня робота #7 GOIT Fullstack #69 Нежигая Сергія
 
-# Модуль 6
+# Модуль 7
