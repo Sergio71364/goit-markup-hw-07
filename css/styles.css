@@ -21,6 +21,7 @@ p,
 ul,
 li {
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -54,20 +55,20 @@ body {
   line-height: 1.19;
 }
 
-.header {
-  border-bottom: 1px solid var(--line-color);
-}
-
-.container__header {
-  display: flex;
-  align-items: center;
-}
-
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid var(--line-color);
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -79,6 +80,16 @@ body {
   margin-right: 93px;
 }
 
+.logo__prefix {
+  color: var(--accent-color);
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+}
+
 .icon {
   display: block;
   fill: currentColor;
@@ -88,16 +99,12 @@ body {
   margin-right: 10px;
 }
 
-.footer .logo {
-  color: var(--primary-white-color);
-}
-
 .signup {
   display: flex;
   flex-direction: column;
 }
 
-.footer-input {
+.signup-form__input {
   width: 358px;
   height: 50px;
   padding: 15px;
@@ -115,18 +122,18 @@ body {
   transition: border-color var(--transition-cubic);
 }
 
-.footer-input::placeholder {
+.signup-form__input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-input:focus {
+.signup-form__input:focus {
   border: 1px solid var(--accent-color);
 }
 
-.signup-button {
+.signup-form__button {
   font-size: 16px;
   line-height: 1.88;
   font-weight: 700;
@@ -142,12 +149,8 @@ body {
   cursor: pointer;
 }
 
-.signup-button .icon {
+.signup-form__icon {
   margin-left: 10px;
-}
-
-.logo span {
-  color: var(--accent-color);
 }
 
 .link {
@@ -284,22 +287,15 @@ body {
   padding-bottom: 60px;
 }
 
-.footer-wrapper {
+.footer__container {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   gap: 70px;
 }
 
-.footer .address {
-  font-size: 14px;
-  line-height: 1.71;
-  font-style: normal;
-  text-decoration: none;
-  color: var(--primary-white-color);
-}
-
-.footer .link {
+.footer .link,
+.address__link {
   display: inline-block;
   font-size: 14px;
   line-height: 1.71;
@@ -309,6 +305,17 @@ body {
   transition: color var(--transition-cubic);
 }
 
+.address__link--light {
+  color: var(--primary-white-color);
+}
+
+.address__item:not(:last-child) {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.address__link:hover,
+.address__link:focus,
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
@@ -352,18 +359,7 @@ body {
   padding-bottom: 94px;
 }
 
-.footer .logo {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.address .item:not(:last-child) {
-  display: block;
-  margin-bottom: 9px;
-}
-
-.social .title,
-.signup-form-title {
+.social__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -371,15 +367,28 @@ body {
   color: var(--primary-white-color);
 }
 
-.social .title {
+.social__title {
   margin-bottom: 20px;
+}
+
+.signup-form__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
 .social {
   color: var(--primary-white-color);
 }
 
-.round-wrapper-link {
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -394,22 +403,15 @@ body {
   transition: color var(--transition-cubic), background-color var(--transition-cubic);
 }
 
-.round-wrapper-link:hover,
-.round-wrapper-link:focus,
-.footer .round-wrapper-link:hover,
-.footer .round-wrapper-link:focus {
+.social-icons__link:hover,
+.social-icons__link:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
-.footer .round-wrapper {
+.social-icons__link--white {
   color: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.social-wrap {
-  display: flex;
-  gap: 10px;
 }
 
 .hero {
@@ -501,7 +503,7 @@ body {
   transform: scale(0.5);
 }
 
-.modal-close-button {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -516,11 +518,11 @@ body {
   transition: color var(--transition-cubic);
 }
 
-.modal-close-button:hover {
+.modal__close-btn:hover {
   color: var(--accent-color);
 }
 
-.hero-form-title {
+.hero-form__title {
   font-size: 20px;
   line-height: 1.15;
   font-weight: 700;
@@ -530,7 +532,7 @@ body {
   margin-bottom: 30px;
 }
 
-.hero-input {
+.hero-form__input {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
@@ -543,35 +545,34 @@ body {
   transition: border-color var(--transition-cubic);
 }
 
-.hero-input::placeholder {
+.hero-form__input::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.hero-input.textarea {
+.hero-form__input--large {
   padding-left: 16px;
   height: 120px;
   resize: none;
 }
 
-.hero-input:focus {
+.hero-form__input:focus {
   border-color: var(--accent-color);
 }
 
-.hero-label {
+.hero-form__label {
   position: relative;
   margin-bottom: 28px;
 }
 
-/* не придумал как красивее */
-.hero-label:nth-child(5) {
+.hero-form__label:nth-child(5) {
   margin-bottom: 20px;
 }
 
-.hero-label:focus-within .hero-field-icon {
+.hero-form__label:focus-within .hero-form__icon {
   color: var(--accent-color);
 }
 
-.hero-field-icon {
+.hero-form__icon {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -580,7 +581,7 @@ body {
   transition: color var(--transition-cubic);
 }
 
-.hero-field-name {
+.hero-form__field-name {
   position: absolute;
   display: block;
   top: -18px;
@@ -591,11 +592,11 @@ body {
   color: var(--primary-text-color);
 }
 
-.checkbox-field {
+.hero-form__checkbox-field {
   position: relative;
 }
 
-.checkbox-label {
+.hero-form__checkbox-label {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -606,11 +607,11 @@ body {
   cursor: pointer;
 }
 
-.checkbox-label a {
+.hero-form__link {
   color: var(--accent-color);
 }
 
-.square {
+.hero-form__square {
   width: 16px;
   height: 15px;
   position: absolute;
@@ -624,7 +625,15 @@ body {
   transition: border-color var(--transition-cubic), background-color var(--transition-cubic);
 }
 
-.check-icon {
+.hero-form__checkbox:focus + .hero-form__square {
+  border-color: var(--accent-color);
+}
+
+.hero-form__checkbox:checked + .hero-form__square {
+  background-color: var(--accent-color);
+}
+
+.hero-form__check-icon {
   display: block;
   position: absolute;
   top: 50%;
@@ -634,24 +643,10 @@ body {
   fill: var(--primary-white-color);
 }
 
-.checkbox:focus + .square {
-  border-color: var(--accent-color);
-}
-
-.checkbox:checked + .square {
-  background-color: var(--accent-color);
-}
-
 .features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
-/* .branches .list,
-.team .list {
-  display: flex;
-  flex-wrap: wrap;
-} */
 
 .features__list {
   display: flex;
