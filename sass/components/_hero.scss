@@ -1,6 +1,6 @@
 .hero {
   text-align: center;
-  background-color: var(--light-background-color);
+  background-color: var(--color-background-light);
   margin: 0 auto;
   max-width: 1600px;
   &__container {
@@ -27,7 +27,7 @@
     margin: 0 auto;
     text-transform: uppercase;
     text-align: center;
-    color: var(--primary-white-color);
+    color: var(--color-primary-white);
     margin-bottom: 30px;
   }
 }

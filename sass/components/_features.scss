@@ -11,7 +11,7 @@
     justify-content: center;
     margin-bottom: 30px;
     border-radius: 4px;
-    background-color: var(--lighter-background-color);
+    background-color: var(--color-background-lighter);
     width: 270px;
     height: 120px;
   }
@@ -19,7 +19,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--title-text-color);
+    color: var(--color-text-title);
     margin-bottom: 10px;
   }
   &__text {

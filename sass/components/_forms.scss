@@ -5,7 +5,7 @@
     font-weight: 700;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-text-color);
+    color: var(--color-text-title);
     margin-bottom: 30px;
   }
   &__input {
@@ -16,7 +16,7 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     width: 100%;
-    color: var(--primary-text-color);
+    color: var(--color-text-primary);
     outline: none;
     transition: border-color var(--transition-cubic);
     &--large {
@@ -28,7 +28,7 @@
       color: rgba(117, 117, 117, 0.5);
     }
     &:focus {
-      border-color: var(--accent-color);
+      border-color: var(--color-accent);
     }
   }
   &__label {
@@ -43,7 +43,7 @@
     top: 50%;
     transform: translateY(-50%);
     left: 15px;
-    color: var(--title-text-color);
+    color: var(--color-text-title);
     transition: color var(--transition-cubic);
   }
   &__field-name {
@@ -54,7 +54,7 @@
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
-    color: var(--primary-text-color);
+    color: var(--color-text-primary);
   }
   &__checkbox-field {
     position: relative;
@@ -64,13 +64,13 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     padding-left: 38px;
-    color: var(--primary-text-color);
-    fill: var(--primary-white-color);
+    color: var(--color-text-primary);
+    fill: var(--color-primary-white);
     margin-bottom: 30px;
     cursor: pointer;
   }
   &__link {
-    color: var(--accent-color);
+    color: var(--color-accent);
   }
   &__square {
     width: 16px;
@@ -79,8 +79,8 @@
     top: 50%;
     left: 15px;
     transform: translateY(-50%);
-    background-color: var(--primary-white-color);
-    border: 2px solid var(--title-text-color);
+    background-color: var(--color-primary-white);
+    border: 2px solid var(--color-text-title);
     border-radius: 2px;
     z-index: 0;
     transition: border-color var(--transition-cubic), background-color var(--transition-cubic);
@@ -92,20 +92,20 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-    fill: var(--primary-white-color);
+    fill: var(--color-primary-white);
   }
 }
 
 .hero-form__label:focus-within .hero-form__icon {
-  color: var(--accent-color);
+  color: var(--color-accent);
 }
 
 .hero-form__checkbox:focus + .hero-form__square {
-  border-color: var(--accent-color);
+  border-color: var(--color-accent);
 }
 
 .hero-form__checkbox:checked + .hero-form__square {
-  background-color: var(--accent-color);
+  background-color: var(--color-accent);
 }
 
 .signup-form {
@@ -116,7 +116,7 @@
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--primary-white-color);
+    color: var(--color-primary-white);
   }
   &__input {
     width: 358px;
@@ -141,7 +141,7 @@
       color: rgba(255, 255, 255, 0.6);
     }
     &:focus {
-      border: 1px solid var(--accent-color);
+      border: 1px solid var(--color-accent);
     }
   }
   &__button {
@@ -149,12 +149,12 @@
     line-height: 1.88;
     font-weight: 700;
     letter-spacing: 0.06em;
-    background-color: var(--accent-color);
+    background-color: var(--color-accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
     padding: 10px 28px;
-    color: var(--primary-white-color);
+    color: var(--color-primary-white);
     display: flex;
     align-items: center;
     cursor: pointer;

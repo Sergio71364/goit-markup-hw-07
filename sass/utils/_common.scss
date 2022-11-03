@@ -1,6 +1,6 @@
 body {
-  background-color: var(--primary-white-color);
-  color: var(--primary-text-color);
+  background-color: var(--color-primary-white);
+  color: var(--color-text-primary);
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
   font-size: 16px;
@@ -28,7 +28,7 @@ body {
   color: #000000;
   margin-right: 93px;
   &__prefix {
-    color: var(--accent-color);
+    color: var(--color-accent);
   }
 }
 
@@ -49,8 +49,8 @@ body {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: var(--color-primary-white);
+  background-color: var(--color-accent);
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -78,13 +78,13 @@ body {
 }
 
 .social {
-  color: var(--primary-white-color);
+  color: var(--color-primary-white);
   &__title {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    color: var(--primary-white-color);
+    color: var(--color-primary-white);
     margin-bottom: 20px;
   }
 }
@@ -100,19 +100,19 @@ body {
     justify-content: center;
     border-radius: 50%;
     cursor: pointer;
-    color: var(--greyish-background-color);
+    color: var(--color-background-grey);
     text-decoration: none;
     outline: none;
     transition: color var(--transition-cubic), background-color var(--transition-cubic);
 
     &--white {
-      color: var(--primary-white-color);
+      color: var(--color-primary-white);
       background-color: rgba(255, 255, 255, 0.1);
     }
     &:hover,
     &:focus {
-      color: var(--primary-white-color);
-      background-color: var(--accent-color);
+      color: var(--color-primary-white);
+      background-color: var(--color-accent);
     }
   }
 }
@@ -122,7 +122,7 @@ body {
   font-weight: 700;
   line-height: 1.16;
   text-align: center;
-  color: var(--title-text-color);
+  color: var(--color-text-title);
   margin-bottom: 50px;
 }
 
