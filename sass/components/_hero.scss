@@ -3,36 +3,9 @@
   background-color: var(--light-background-color);
   margin: 0 auto;
   max-width: 1600px;
-}
-
-.hero__container {
-  display: block;
-}
-
-.hero-overlay__title {
-  font-size: 44px;
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  max-width: 690px;
-  margin: 0 auto;
-  text-transform: uppercase;
-  text-align: center;
-  color: var(--primary-white-color);
-  margin-bottom: 30px;
-}
-
-.hero .button,
-.hero-form .button {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.88;
-  padding: 10px 32px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  &__container {
+    display: block;
+  }
 }
 
 .hero-overlay {
@@ -45,4 +18,16 @@
   background-size: cover;
   padding: 200px 0;
   margin: 0 auto;
+  &__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    max-width: 690px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-white-color);
+    margin-bottom: 30px;
+  }
 }
