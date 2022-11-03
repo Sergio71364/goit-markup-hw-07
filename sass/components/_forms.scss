@@ -1,0 +1,120 @@
+.hero-form__title {
+  font-size: 20px;
+  line-height: 1.15;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+}
+
+.hero-form__input {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  padding: 12px 16px 12px 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 100%;
+  color: var(--primary-text-color);
+  outline: none;
+  transition: border-color var(--transition-cubic);
+}
+
+.hero-form__input::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.hero-form__input--large {
+  padding-left: 16px;
+  height: 120px;
+  resize: none;
+}
+
+.hero-form__input:focus {
+  border-color: var(--accent-color);
+}
+
+.hero-form__label {
+  position: relative;
+  margin-bottom: 28px;
+}
+
+.hero-form__label:nth-child(5) {
+  margin-bottom: 20px;
+}
+
+.hero-form__label:focus-within .hero-form__icon {
+  color: var(--accent-color);
+}
+
+.hero-form__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  color: var(--title-text-color);
+  transition: color var(--transition-cubic);
+}
+
+.hero-form__field-name {
+  position: absolute;
+  display: block;
+  top: -18px;
+  left: 0;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.hero-form__checkbox-field {
+  position: relative;
+}
+
+.hero-form__checkbox-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  padding-left: 38px;
+  color: var(--primary-text-color);
+  fill: var(--primary-white-color);
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.hero-form__link {
+  color: var(--accent-color);
+}
+
+.hero-form__square {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  background-color: var(--primary-white-color);
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  z-index: 0;
+  transition: border-color var(--transition-cubic), background-color var(--transition-cubic);
+}
+
+.hero-form__checkbox:focus+.hero-form__square {
+  border-color: var(--accent-color);
+}
+
+.hero-form__checkbox:checked+.hero-form__square {
+  background-color: var(--accent-color);
+}
+
+.hero-form__check-icon {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  fill: var(--primary-white-color);
+}

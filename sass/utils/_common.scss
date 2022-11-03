@@ -1,0 +1,158 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+label,
+input {
+  display: block;
+}
+
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  color: #000000;
+  margin-right: 93px;
+}
+
+.logo__prefix {
+  color: var(--accent-color);
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--primary-white-color);
+}
+
+.icon {
+  display: block;
+  fill: currentColor;
+}
+
+.button {
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.social {
+  color: var(--primary-white-color);
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons__link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  color: var(--greyish-background-color);
+  text-decoration: none;
+  outline: none;
+  transition: color var(--transition-cubic), background-color var(--transition-cubic);
+}
+
+.social-icons__link:hover,
+.social-icons__link:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.social-icons__link--white {
+  color: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 50px;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
