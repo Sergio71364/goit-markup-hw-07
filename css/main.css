@@ -459,7 +459,6 @@ body {
 
 .branches {
   padding-top: 0;
-  padding-bottom: 94px;
 }
 .branches__list {
   display: -webkit-box;
@@ -499,10 +498,6 @@ body {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.clients__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,10 +528,6 @@ body {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.features__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1053,11 +1044,6 @@ body {
           transform: scale(0.5);
 }
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1165,8 +1151,6 @@ body {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: var(--color-background-lighter);
 }
 .team__cards {
