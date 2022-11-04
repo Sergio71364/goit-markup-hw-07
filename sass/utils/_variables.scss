@@ -1,4 +1,9 @@
 :root {
+  // fonts
+  --font-primary: 'Roboto', sans-serif;
+  --font-primary-size: 16px;
+  --font-secondary: 'Raleway', sans-serif;
+  // colors
   --color-accent: #2196f3;
   --color-primary-white: #ffffff;
   --color-text-title: #212121;
@@ -9,5 +14,6 @@
   --color-background-lighter: #f5f4fa;
   --color-line: #ececec;
 
+  // animations
   --transition-cubic: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

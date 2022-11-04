@@ -1,9 +1,9 @@
 body {
   background-color: var(--color-primary-white);
   color: var(--color-text-primary);
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-primary);
   letter-spacing: 0.03em;
-  font-size: 16px;
+  font-size: var(--font-primary-size);
   line-height: 1.19;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
