@@ -21,14 +21,21 @@ body {
 }
 
 .logo {
+  display: block;
   font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
-  color: #000000;
+  color: var(--color-accent);
   margin-right: 93px;
-  &__prefix {
-    color: var(--color-accent);
+  &__suffix {
+    color: var(--color-primary-black);
+    &--white {
+      color: var(--color-primary-white);
+    }
+  }
+  &--footer {
+    margin-bottom: 20px;
   }
 }
 

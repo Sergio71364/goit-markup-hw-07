@@ -4,6 +4,7 @@
   --font-secondary: "Raleway", sans-serif;
   --color-accent: #2196f3;
   --color-primary-white: #ffffff;
+  --color-primary-black: #000000;
   --color-text-title: #212121;
   --color-text-primary: #757575;
   --color-background-dark: #2f303a;
@@ -360,15 +361,22 @@ body {
 }
 
 .logo {
+  display: block;
   font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 26px;
   text-decoration: none;
-  color: #000000;
+  color: var(--color-accent);
   margin-right: 93px;
 }
-.logo__prefix {
-  color: var(--color-accent);
+.logo__suffix {
+  color: var(--color-primary-black);
+}
+.logo__suffix--white {
+  color: var(--color-primary-white);
+}
+.logo--footer {
+  margin-bottom: 20px;
 }
 
 .icon {
@@ -938,24 +946,10 @@ body {
   text-align: center;
   background-color: var(--color-background-light);
   margin: 0 auto;
-  max-width: 1600px;
-}
-.hero__container {
-  display: block;
-}
-
-.hero-overlay {
-  max-width: 1600px;
-  height: 600px;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 200px 0;
-  margin: 0 auto;
+  max-width: 1600px;
 }
-.hero-overlay__title {
+.hero__title {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -966,6 +960,17 @@ body {
   text-align: center;
   color: var(--color-primary-white);
   margin-bottom: 30px;
+}
+
+.hero-canvas {
+  max-width: 1600px;
+  height: 600px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .modal {
