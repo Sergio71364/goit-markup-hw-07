@@ -26,6 +26,9 @@
       color: var(--color-accent);
     }
   }
+  .is-hidden & {
+    transform: scale(0.5);
+  }
 }
 
 .backdrop {
@@ -51,6 +54,6 @@
   visibility: hidden;
 }
 
-.is-hidden .modal {
-  transform: scale(0.5);
-}
+// .is-hidden .modal {
+//   transform: scale(0.5);
+// }

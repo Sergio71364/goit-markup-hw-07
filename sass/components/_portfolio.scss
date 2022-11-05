@@ -64,6 +64,10 @@
     background: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
     transition: transform var(--transition-cubic);
+    .projects__link:hover &,
+    .projects__link:focus & {
+      transform: translateY(0);
+    }
   }
   &__details {
     border: 1px solid #eeeeee;
@@ -82,9 +86,4 @@
     line-height: 1.88;
     color: var(--color-text-primary);
   }
-}
-
-.projects__link:hover .projects__overlay,
-.projects__link:focus .projects__overlay {
-  transform: translateY(0);
 }
