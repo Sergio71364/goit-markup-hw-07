@@ -1,9 +1,6 @@
 .team {
-  background: var(--color-background-lighter);
-  &__cards {
-    display: flex;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  flex-wrap: wrap;
   &__card {
     border-radius: 0px 0px 4px 4px;
     background: var(--color-primary-white);

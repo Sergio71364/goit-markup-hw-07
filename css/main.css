@@ -402,6 +402,17 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.section__title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--color-text-title);
+  margin-bottom: 50px;
+}
+.section--grey {
+  background: var(--color-background-lighter);
+}
 
 .social {
   color: var(--color-primary-white);
@@ -448,15 +459,6 @@ body {
 .social-icons__link:hover, .social-icons__link:focus {
   color: var(--color-primary-white);
   background-color: var(--color-accent);
-}
-
-.section-title {
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.16;
-  text-align: center;
-  color: var(--color-text-title);
-  margin-bottom: 50px;
 }
 
 .image {
@@ -1145,9 +1147,6 @@ body {
 }
 
 .team {
-  background: var(--color-background-lighter);
-}
-.team__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
